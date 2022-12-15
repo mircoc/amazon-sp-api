@@ -38,7 +38,7 @@ export interface Config {
   role_credentials?: RoleCredentials;
   credentials?: Credentials;
   options?: Options;
-  endpoints_versions: Record<string, string>
+  endpoints_versions?: Record<string, string>
 }
 
 export interface Pagination {
