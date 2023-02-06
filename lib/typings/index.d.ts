@@ -450,13 +450,6 @@ declare module 'amazon-sp-api' {
     query?: QueryType<TOperation>;
     body?: BodyType<TOperation>;
     options?: ReqOptions;
-    /** _Only needed for shipping-api-v2_
-     * 
-     * Amazon shipping business to assume for this request. 
-     * 
-     * The default is *AmazonShipping_UK*
-     *
-     * */
-    amzShippingBizId?: string;
+    headers?: Record<string, unknown>,
   }
 }
